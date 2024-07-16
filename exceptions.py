@@ -2,8 +2,8 @@ def add_numbers(a, b):
     try:
         result = a + b
         print(f"The result is: {result}")
-    except TypeError as e:
-        print(f"Please provide two integers as arguments when invoking this function.")
+    except TypeError:
+        print("Please provide two integers as arguments when invoking this function.")
 
 # Example usage
 add_numbers(5, "10")
@@ -14,7 +14,7 @@ def get_value(dictionary, key):
     try:
         value = dictionary[key]
         print(f"The value for '{key}' is: {value}")
-    except KeyError as e:
+    except KeyError:
         print("Please provide a valid key when invoking this function.")
 
 # Example usage
